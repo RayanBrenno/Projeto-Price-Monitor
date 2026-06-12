@@ -1,0 +1,9 @@
+backend/prices.db
+backend/logs/
+__pycache__/
+**/__pycache__/
+*.pyc
+venv/
+.env
+frontend/dist/
+frontend/node_modules/

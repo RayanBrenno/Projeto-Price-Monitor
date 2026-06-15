@@ -3,13 +3,10 @@ import logging
 import time
 
 import requests
-from dotenv import load_dotenv
 
 from .db import init_db, get_all_products, insert_price, touch_last_checked
 from .parsers import get_parser
 from .parsers._browser import browser_session
-
-load_dotenv(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".env"))
 
 LOG_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "logs")
 
